@@ -1,26 +1,34 @@
 {
-  "name": "monitored-app",
-  "version": "1.0.0",
-  "description": "A simmple node.js web server useful for monitoring, alerting and reporting training ",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jbuget/monitored-app.git"
-  },
-  "keywords": [
-    "node",
-    "observability",
-    "alerting",
-    "monitoring",
-    "reporting"
-  ],
-  "author": "J. Buget <contact@jbuget.fr>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jbuget/monitored-app/issues"
-  },
-  "homepage": "https://github.com/jbuget/monitored-app#readme"
+    "name": "monitored-app",
+    "version": "1.0.0",
+    "description": "A simmple node.js web server useful for monitoring, alerting and reporting training ",
+    "main": "index.js",
+    "scripts": {
+        "start": "node bin/www.js",
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jbuget/monitored-app.git"
+    },
+    "keywords": [
+        "node",
+        "observability",
+        "alerting",
+        "monitoring",
+        "reporting"
+    ],
+    "author": "J. Buget <contact@jbuget.fr>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jbuget/monitored-app/issues"
+    },
+    "homepage": "https://github.com/jbuget/monitored-app#readme",
+    "dependencies": {
+        "fastify": "^4.14.1"
+    },
+    "type": "module",
+    "bin": {
+        "www": "./bin/www.js"
+    }
 }
